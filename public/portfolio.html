@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Bootstrap Basic Portfolio Page</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- your own CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="production.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+<!--CSS-->
+<style>
+      
+  body {
+    background-image: url("/assets/horizontal-code-light-blue-1-push.webp");
+    background-size:cover;
+    /*
+    background-repeat: no-repeat;
+    background-size:cover;
+    */
+  }
+
+  /*
+  .weather-header {
+    color:rgb(160, 108, 24)
+  }
+  */
+
+  </style>
+  <!--CSS-END-->
+    <!--   navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+    </nav>
+    <!-- Start of container -->
+    <div class="container-fluid mycontainer">
+      <div class="row myrows">
+        <div class="col-xl-2 mycols">
+          <h3>Uconn Coding Boot Camp Student.</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/uconn-coding-bootcamp-logo.png">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/uconn-coding-bootcamp.html">More Info</a>
+          </button>
+        </div>
+        <div class="col-xl-2 mycols">
+          <h3>Edgehill Senior Living Food Server/Dietary-Aide.</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/edgehill_logo-fall.png" alt="Edgehill a Benchmark Senior Living Community">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/edgehill.html">More Info</a>
+          </button>
+        </div>
+        <div class="col-xl-2 mycols">
+          <h3>Computer Science Student at Norwalk Community College.</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/ncc-logo-blue-with-text.png" alt="Campus Logo NCC Norwalk Community College">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/ncc.html">More Info</a>
+          </button>
+        </div>
+        <div class="col-xl-2 mycols">
+          <h3>Worked as a Waiter/Server in Various Staffing Companies in Greenwich and Westchester County NY.</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/food-service-kitchen.jpg" alt="A Manager and Waiter in the Kitchen holding serving trays to serve Breakfast to tables.">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/staffing.html">More Info</a>
+          </button>
+        </div>
+        <div class="col-xl-2 mycols">
+          <h3>Taught Scratch and JavaScript Basics at BrainBoost.</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/brainboost-672x372.jpg" alt="Think Discover Build The BrainBoost LightBulb Logo.">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/brain-boost.html">More Info</a>
+          </button>
+        </div>
+        <div class="col-xl-2 mycols">
+          <h3>Yo hablo Espanol. (I speak Spanish.)</h3>
+          <img class="img-responsive styledImage" width="200px" src="./assets/spanish-language.jpg" alt="Yo hablo Espanol. (I speak Spanish.)">
+          <button type="button" class="btn btn-success">
+            <a class="href-text-light" href="./portfolio/espanol.html">More Info</a>
+          </button>
+        </div>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+
+    <!-- Bootstrap CDN -->
+  </body>
+</html>

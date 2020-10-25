@@ -1,0 +1,22 @@
+
+.myrows {
+  border: 3px solid green;
+}
+
+.mycols {
+  border: 3px solid red;
+}
+
+.mycontainer {
+  background-color: aqua;
+  border: 3px solid magenta;
+}
+
+h3 {
+  color: blue;
+}
+
+.img-coding {
+  width: 100%;
+  height: 100%;
+}
