@@ -48,7 +48,8 @@ ul{
 }
 
 a {
-  color: #3aaaff !important;
+  color: #e0115f !important;
+  font-weight: bold;
 }
 .link:hover {
   cursor: pointer;
@@ -56,22 +57,22 @@ a {
   color: black;
 }
 .main-value {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Lucida Console", Monaco, monospace;
   height: 50px;
   align-self: end;
-  color: #3aaaff;
+  color: #b9f2ff;
 }
 .sub-value {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Lucida Console", Monaco, monospace;
   width: 60%;
   font-weight: 250;
   font-size: 32px;
   line-height: 1.4;
-  color: #333333;
+  color: #e5e4e2;
 }
 .sota {
   font-weight: 900;
-  color: #3aaaff;
+  color: #3aff5b;
 }
 
 .enzo {
