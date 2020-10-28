@@ -34,8 +34,6 @@ $(document).ready(() => {
       })
       .catch(err => {
         console.log(err);
-        if (err.responseText === "Unauthorized")
-          alert("Please check your UserName/ Pass");
       });
   }
 });
