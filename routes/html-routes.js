@@ -36,33 +36,51 @@ app.get("/portfolio", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/contact.html"));
   if (req.user) {
     res.redirect("/contact");
   }
+  res.sendFile(path.join(__dirname, "../public/contact.html"));
 });
 
 //////////////////////////////// Below is the list of Routes to the SubPages of my Portfolio /////////////////////////////////////
 app.get("/portfolio/brain-boost", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/brain-boost");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/brain-boost.html"));
 });
 
 app.get("/portfolio/edgehill", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/edgehill");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/edgehill.html"));
 });
 
 app.get("/portfolio/espanol", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/espanol");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/espanol.html"));
 });
 
 app.get("/portfolio/ncc", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/ncc");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/ncc.html"));
 });
 
 app.get("/portfolio/staffing", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/staffing");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/staffing.html"));
 });
 
 app.get("/portfolio/uconn-coding-bootcamp", (req, res) => {
+  if (req.user) {
+    res.redirect("/portfolio/uconn-coding-bootcamp");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio/uconn-coding-bootcamp.html"));
 });
