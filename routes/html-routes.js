@@ -44,3 +44,7 @@ app.get("/portfolio/brain-boost", (req, res) => {
 app.get("/portfolio/edgehill", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/edgehill.html"));
 });
+
+app.get("/portfolio/espanol", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/espanol.html"));
+});
