@@ -26,7 +26,6 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
-};
 
 app.get("/portfolio", (req, res) => {  
   if (req.user) {
@@ -95,3 +94,5 @@ app.get("/portfolio/uconn-coding-bootcamp", (req, res) => {
 
 
 //////END Portfolio Subpages.//////
+
+};
