@@ -52,3 +52,7 @@ app.get("/portfolio/espanol", (req, res) => {
 app.get("/portfolio/ncc", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/ncc.html"));
 });
+
+app.get("/portfolio/staffing", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/staffing.html"));
+});
