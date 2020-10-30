@@ -28,35 +28,41 @@ module.exports = function(app) {
   });
 };
 
-app.get("/portfolio", (req, res) => {
+app.get("/portfolio", (req, res) => {  
+  if (req.user) {
+    res.redirect("/portfolio");
+  }
   res.sendFile(path.join(__dirname, "../public/portfolio.html"));
 });
 
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/contact.html"));
+  if (req.user) {
+    res.redirect("/contact");
+  }
 });
 
-//Below is the list of Routes to the SubPages of my Portfolio
+//////////////////////////////// Below is the list of Routes to the SubPages of my Portfolio /////////////////////////////////////
 app.get("/portfolio/brain-boost", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/brain-boost.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/brain-boost.html"));
 });
 
 app.get("/portfolio/edgehill", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/edgehill.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/edgehill.html"));
 });
 
 app.get("/portfolio/espanol", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/espanol.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/espanol.html"));
 });
 
 app.get("/portfolio/ncc", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/ncc.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/ncc.html"));
 });
 
 app.get("/portfolio/staffing", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/staffing.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/staffing.html"));
 });
 
 app.get("/portfolio/uconn-coding-bootcamp", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/uconn-coding-bootcamp.html"));
+  res.sendFile(path.join(__dirname, "../public/portfolio/uconn-coding-bootcamp.html"));
 });
