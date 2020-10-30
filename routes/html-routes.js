@@ -56,3 +56,7 @@ app.get("/portfolio/ncc", (req, res) => {
 app.get("/portfolio/staffing", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/staffing.html"));
 });
+
+app.get("/portfolio/uconn-coding-bootcamp", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/uconn-coding-bootcamp.html"));
+});
