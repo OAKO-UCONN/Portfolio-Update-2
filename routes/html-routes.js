@@ -43,6 +43,8 @@ app.get("/contact", (req, res) => {
 });
 
 //////////////////////////////// Below is the list of Routes to the SubPages of my Portfolio /////////////////////////////////////
+
+//BrainBoost
 app.get("/portfolio/brain-boost", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/brain-boost");
@@ -50,6 +52,7 @@ app.get("/portfolio/brain-boost", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/portfolio/brain-boost.html"));
 });
 
+//Edgehill
 app.get("/portfolio/edgehill", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/edgehill");
@@ -57,6 +60,7 @@ app.get("/portfolio/edgehill", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/portfolio/edgehill.html"));
 });
 
+//Espanol
 app.get("/portfolio/espanol", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/espanol");
@@ -64,6 +68,7 @@ app.get("/portfolio/espanol", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/portfolio/espanol.html"));
 });
 
+//NCC
 app.get("/portfolio/ncc", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/ncc");
@@ -71,6 +76,7 @@ app.get("/portfolio/ncc", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/portfolio/ncc.html"));
 });
 
+//Staffing
 app.get("/portfolio/staffing", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/staffing");
@@ -78,9 +84,14 @@ app.get("/portfolio/staffing", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/portfolio/staffing.html"));
 });
 
+//UCONN Coding Bootcamp
 app.get("/portfolio/uconn-coding-bootcamp", (req, res) => {
   if (req.user) {
     res.redirect("/portfolio/uconn-coding-bootcamp");
   }
   res.sendFile(path.join(__dirname, "../public/portfolio/uconn-coding-bootcamp.html"));
 });
+
+
+
+//////END Portfolio Subpages.//////
