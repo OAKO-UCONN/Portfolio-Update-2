@@ -40,3 +40,7 @@ app.get("/contact", (req, res) => {
 app.get("/portfolio/brain-boost", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/brain-boost.html"));
 });
+
+app.get("/portfolio/edgehill", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/edgehill.html"));
+});
