@@ -1,20 +1,25 @@
 
 .myrows {
-  border: 3px solid green;
+  border: 3px groove royalblue;
 }
 
+/*
 .mycols {
   border: 3px solid red;
 }
+*/
 
 .mycontainer {
   background-color: rgba(26, 148, 148, 0.842);
-  border: 3px solid magenta;
+  border: 3px outset goldenrod;
 }
 
+/*
 h3 {
   color: rgb(112, 253, 107);
 }
+*/
+
 
 .img-coding {
   width: 100%;
@@ -22,5 +27,5 @@ h3 {
 }
 
 h1 {
-  color: gold
+  color: goldenrod
 }
