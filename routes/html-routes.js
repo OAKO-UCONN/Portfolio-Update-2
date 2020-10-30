@@ -35,3 +35,8 @@ app.get("/portfolio", (req, res) => {
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/contact.html"));
 });
+
+//Below is the list of Routes to the SubPages of my Portfolio
+app.get("/portfolio/brain-boost", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/brain-boost.html"));
+});
