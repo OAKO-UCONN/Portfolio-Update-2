@@ -48,3 +48,7 @@ app.get("/portfolio/edgehill", (req, res) => {
 app.get("/portfolio/espanol", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/espanol.html"));
 });
+
+app.get("/portfolio/ncc", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/ncc.html"));
+});
